@@ -3,6 +3,8 @@ import commerce from './lib/commerce';
 import { Products, Header, Cart } from './components';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
+import HomePage from './pages/Home';
+
 const App = () => {
   
   const [products, setProducts] = useState([]);
@@ -54,9 +56,9 @@ console.log(cart);
     <div>
         <Header totalItems={cart.total_items}/>
         <Routes>
-          <Route path="/" element={<Products products={products} onAddToCart={handleAddToCart} />
+          <Route path="/" element={<HomePage />}/>
+          <Route path="/product" element={<Products products={products} onAddToCart={handleAddToCart} />
 }/>
-
           <Route path="/cart" element={
             <Cart cart={cart}
             handleUpdateCartQty={handleUpdateCartQty}
