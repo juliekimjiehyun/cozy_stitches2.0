@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import commerce from './lib/commerce';
-import { Products, Header, Cart } from './components';
+import { Header, Cart, Footer } from './components';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
-import HomePage from './pages/Home';
+import Home from './pages/Home';
+import Contact from './pages/Contact';
+import Products from './pages/Products';
+import About from './pages/About';
+
 
 const App = () => {
   
@@ -56,9 +60,9 @@ console.log(cart);
     <div>
         <Header totalItems={cart.total_items}/>
         <Routes>
-          <Route path="/" element={<HomePage />}/>
-          <Route path="/product" element={<Products products={products} onAddToCart={handleAddToCart} />
-}/>
+          <Route path="/" element={<Home />}/>
+          <Route path="/about" element={<About />}/>
+          <Route path="/products" element={<Products products={products} onAddToCart={handleAddToCart} />}/>
           <Route path="/cart" element={
             <Cart cart={cart}
             handleUpdateCartQty={handleUpdateCartQty}
@@ -66,8 +70,9 @@ console.log(cart);
             handleEmptyCart={handleEmptyCart}
             />
             }/>
-
+            <Route path="contact" element={<Contact />}/>
         </Routes>
+        <Footer/>
     </div>
     </Router>
   )

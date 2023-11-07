@@ -6,7 +6,6 @@ import {
     CarouselCaption,
     CarouselIndicators
 } from 'reactstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import commerce from '../../../lib/commerce';
 
 

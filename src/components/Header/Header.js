@@ -7,11 +7,6 @@ import {
     Nav,
     NavItem,
     NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    NavbarText,
     Badge,
     Button
   } from 'reactstrap';
@@ -27,7 +22,7 @@ const Header = ({totalItems}) => {
       
     const toggle = () => setIsOpen(!isOpen);
 
-    if (location.pathname === '/')
+    
 
     return (
         <div>
@@ -37,26 +32,15 @@ const Header = ({totalItems}) => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="me-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Components</NavLink>
+                <NavLink href="/products/">Products</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">
-                  GitHub
-                </NavLink>
+                <NavLink href="/about">About Us</NavLink>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Options
-                </DropdownToggle>
-                <DropdownMenu end>
-                  <DropdownItem>Option 1</DropdownItem>
-                  <DropdownItem>Option 2</DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>Reset</DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              <NavItem>
+                <NavLink href="/contact">Contact</NavLink>
+              </NavItem>
             </Nav>
-            <NavbarText>NAVBAR</NavbarText>
 {location.pathname === '/' && (
 
               <Button>

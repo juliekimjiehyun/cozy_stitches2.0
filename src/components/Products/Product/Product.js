@@ -1,7 +1,7 @@
 import React from 'react'
 import {Card, CardColumns, CardBody, CardText, CardTitle, CardSubtitle, Button} from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-  import { faBagShopping } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBagShopping } from '@fortawesome/free-solid-svg-icons'
 
 
 const Product = ({product, onAddToCart}) => {
@@ -9,6 +9,7 @@ const Product = ({product, onAddToCart}) => {
   console.log(product);
 
     return (
+
     <Card >
         <img
             alt={product.is.name}
