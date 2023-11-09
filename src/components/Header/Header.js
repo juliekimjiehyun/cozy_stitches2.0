@@ -13,6 +13,8 @@ import {
   import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
   import { faBagShopping } from '@fortawesome/free-solid-svg-icons';
 import {useLocation} from 'react-router-dom';
+import logo from '../../assets/logo.png';
+import './styles.css';
 
 const Header = ({totalItems}) => {
   
@@ -22,15 +24,25 @@ const Header = ({totalItems}) => {
       
     const toggle = () => setIsOpen(!isOpen);
 
-    
-
     return (
         <div>
-        <Navbar>
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+        <Navbar className="header" light expand="sm">
+          <NavbarBrand href="/">
+            <img 
+              alt="logo"
+              src={logo}
+              style={{
+                height: 80,
+                width: 65
+              }}
+            />
+          </NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="me-auto" navbar>
+            <NavItem >
+                <NavLink href="/">Home</NavLink>
+              </NavItem>
               <NavItem>
                 <NavLink href="/products/">Products</NavLink>
               </NavItem>

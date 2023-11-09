@@ -4,6 +4,7 @@ import ProductCarousel from '../components/Products/Carousel/Carousel';
 import customOrderLogo from '../assets/customOrderLogo.png';
 import flashSaleLogo from '../assets/flashSaleLogo.png';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import './pagesStyles.css';
 
 const HomePage = () => {
     useEffect(() => {

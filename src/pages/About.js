@@ -2,7 +2,7 @@ import React from 'react'
 import flowerBackground from '../assets/flowerBackground.png';
 import rainbowBackground from '../assets/rainbowBackground.png';
 import Contact from './Contact';
-
+import './pagesStyles.css';
 
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -12,7 +12,7 @@ import { Pin, Twitter } from '@mui/icons-material';
 
 const About = () => {
   return (
-    <>
+    <div className="aboutPage">
         <div>
             <img src={flowerBackground} alt="Flower background"/>
             <h1>Welcome!</h1>
@@ -43,7 +43,7 @@ const About = () => {
             <PinterestIcon fontSize="large"/>
             <TwitterIcon fontSize="large"/>
          </div>
-    </>
+    </div>
   )
 }
 

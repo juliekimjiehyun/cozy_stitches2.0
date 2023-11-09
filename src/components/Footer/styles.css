@@ -1,0 +1,27 @@
+.footer {
+    background-color:#F0EB8D;
+    padding: 40px;
+}
+
+h5{
+    font-size: 15px;
+}
+
+a, .btn-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 12px;
+}
+
+.footerLogos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    padding-bottom: 15px;
+}
+
+.footerText {
+    text-align: center;
+    font-size: 10px;
+}

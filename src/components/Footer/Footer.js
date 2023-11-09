@@ -1,18 +1,19 @@
 import React from 'react'
 import { Container, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
-
 import handmadeLogo from '../../assets/handmadeLogo.png';
 import cottonLogo from '../../assets/cottonLogo.png';
 
+import './styles.css';
+
 const Footer = () => {
     return (
-        <footer className="site-footer">
+        <footer className="footer">
             <Container>
                 <Row>
-                    <Col xs={{ size: 4, offset: 1 }} sm='2'>
+                    <Col>
                         <h5>LINKS</h5>
-                        <ul className='list-unstyled'>
+                        <ul className='list-unstyled text-start'>
                             <li>
                                 <Link to='/'>HOME</Link>
                             </li>
@@ -27,14 +28,25 @@ const Footer = () => {
                             </li>
                         </ul>
                     </Col>
-                    <Col xs='6' sm='3' className='text-center'>
+                    <Col className='text-start'>
                         <h5>SOCIAL</h5>
-                       <p>FACEBOOK</p>
-                       <p>INSTAGRAM</p>
-                       <p>PINTEREST</p>
-                       <p>TWITTER</p>
+                        <ul className='list-unstyled'>
+                            <li>
+                             <a href="https://facebook.com">FACEBOOK</a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com">INSTAGRAM</a>
+                            </li>
+                            <li>
+                                <a href="https://pinterest.com">PINTEREST</a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com">TWITTER</a>
+                            </li>
+                        </ul>
+                        
                     </Col>
-                    <Col sm='4' className='text-center'>
+                    <Col className='text-start'>
                         <a
                             role='button'
                             className='btn btn-link'
@@ -52,19 +64,20 @@ const Footer = () => {
                         </a>
                     </Col>
                 </Row>
+                <hr/>
                 <Row>
-                    <Col>
-                    <img src={handmadeLogo} alt="handmade logo"/>
-                    </Col>
-                    <Col>
-                    <img src={cottonLogo} alt="cotton logo"/>
+                    <Col className="footerLogos">
+                        <img src={handmadeLogo} alt="handmade logo" height="80"/>
+                        <img src={cottonLogo} alt="cotton logo" height="80"/>
                     </Col>
                 </Row>
-                <Row>
-                    <Col>Privacy Policy</Col>
-                    <Col>Terms of Use</Col>
+                <Row className="footerText">
+                    <Col>
+                        <a>Privacy Policy   |   </a>
+                        <a>     Terms of Use</a>
+                    </Col>
                 </Row>
-                <Row>
+                <Row className="footerText">
                     <Col>
                     © COZYSTITCHES | All Rights Reserved
                     </Col>
@@ -73,5 +86,4 @@ const Footer = () => {
         </footer >
     )
 }
-
 export default Footer;

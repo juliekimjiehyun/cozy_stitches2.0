@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMobileScreenButton, faCommentDots, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import React, { useEffect } from 'react';
 import { Container, Row, Col, Card, CardBody, CardTitle, CardText, Button } from 'reactstrap';
-
+import './pagesStyles.css';
 
 const Contact = () => {
     useEffect(() => {
@@ -14,7 +14,7 @@ const Contact = () => {
 
 
     return (
-        <Container>
+        <Container className="contactPage">
             <Row>
                 <Col>
                     <h1>Contact</h1>

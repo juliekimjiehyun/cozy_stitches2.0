@@ -1,11 +1,11 @@
 import React from 'react';
 import {Container, Row, Col} from 'reactstrap';
 import Product from '../components/Products/Product/Product';
-
+import './pagesStyles.css';
 
 const Products = ({products, onAddToCart}) => {
         return (
-<Container>
+<Container className="productPage">
     <h1>Amigurumi</h1>
     <Row className="ms-auto">{
         products.map(product => {

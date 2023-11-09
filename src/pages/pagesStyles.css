@@ -1,0 +1,30 @@
+.homePage {
+    background-color: #c3e1ee;
+}
+
+.aboutPage {
+    background-color: #f2c42f;
+}
+
+.contactPage {
+    background-color: #e07978;
+}
+
+.productPage {
+    background-color: #da661b;
+}
+
+h1 {
+    font-family: 'DynaPuff', sans-serif;
+    font-size: 7rem;
+    color: white;
+    text-align: left;
+    text-align: center;
+    padding-top: 5rem;
+    text-shadow: 
+    -1px 1px 0 black, 
+    1px 1px 0 black,
+    1px -1px 0 black,
+    -1px -1px 0 black,
+    -5px 5px 0 black;
+ }
