@@ -49,8 +49,8 @@ const Header = ({totalItems}) => {
                 <NavLink href="/contact">Contact</NavLink>
               </NavItem>
             </Nav>
-              <Button className="cart-btn">
-              <FontAwesomeIcon icon={faBagShopping} />
+              <Button className="cart-btn" outline>
+              <FontAwesomeIcon icon={faBagShopping} className="shoppingIcon"/>
                 <Badge color="warning" pill href={"/cart"}>
                  {totalItems}
                 </Badge>

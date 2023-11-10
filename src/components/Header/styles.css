@@ -5,6 +5,10 @@
 }
 
 .cart-btn {
-    background-color: hotpink;
+    background-color: transparent;
+    border: hotpink;
+}
 
+.shoppingIcon {
+    color: rgb(145, 142, 142);
 }

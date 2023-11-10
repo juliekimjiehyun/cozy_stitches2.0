@@ -8,7 +8,7 @@ const Products = ({products, onAddToCart}) => {
         <div className="productPage">
             <Container>
                 <h1>Amigurumi</h1>
-                <Row className="mb-5">{
+                <Row className="ms-auto">{
                     products.map(product => {
                         return (
                             <Col sm="6" md="4">

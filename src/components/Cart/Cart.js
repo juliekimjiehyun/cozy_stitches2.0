@@ -1,7 +1,8 @@
 import React from 'react';
-import {Container, Button} from 'reactstrap';
+import {Container, Button, Row, Col} from 'reactstrap';
 import CartItem from './CartItem/CartItem'
 import {Link} from 'react-router-dom';
+import './styles.css'
 
 const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart }) => {
   
@@ -13,13 +14,18 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
 
   const FilledCart = () => (
     <>
-        <Container>
-            {cart.line_items.map((lineItem) => (
-                <Container key={lineItem.id}>
+        <div>
+          <Container>
+              <Row className="cartItems">
+                {cart.line_items.map((lineItem) => (
+                  <Col key={lineItem.id} sm="6" md="4">
                     <CartItem item={lineItem} onUpdateCartQty={handleUpdateCartQty} onRemoveFromCart={handleRemoveFromCart}/>
-                </Container>
-            ))}
-        </Container>
+                  </Col>
+                ))}
+              </Row>
+          </Container>
+              
+        </div>
         <div>
             <p>
                 Subtotal: {cart.subtotal.formatted_with_symbol}
@@ -39,7 +45,7 @@ if(!cart.line_items) return "Loading...";
   return (
     <Container>
         <h1>Your Shopping Cart</h1>
-       {!cart.line_items.length ? <EmptyCart /> : <FilledCart />}
+            {!cart.line_items.length ? <EmptyCart /> : <FilledCart />}       
     </Container>
   )
 }

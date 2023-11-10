@@ -45,7 +45,7 @@ const Product = ({product, onAddToCart, args}) => {
             </CardBody>
             </Card>
     <Modal isOpen={modal} toggle={toggle} {...args}>
-        <ModalHeader className="modalTitle" toggle={toggle}>{product.name}</ModalHeader>
+        <ModalHeader className="modalTitle" toggle={toggle}></ModalHeader>
         <ModalBody className="modalImage">
             <img
                 alt={product.is.name}

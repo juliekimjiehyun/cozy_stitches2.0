@@ -15,12 +15,17 @@
     display: block;
 }
 
-.modalImage, .modalPrice, .modalButtons, .modalBody, .modalTitle {
+.modalImage, .modalPrice, .modalButtons, .modalBody {
     justify-content: center;
     text-align: center;
     background-color: pink;
     font-family: 'Poppins', sans-serif;
 
+}
+
+.modalTitle {
+    border: pink;
+    background-color: pink;
 }
 
 .cartButton {

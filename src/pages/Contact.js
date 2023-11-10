@@ -22,7 +22,7 @@ const Contact = () => {
                 </Col>
             </Row>
             <Row className='m-5 contactCards'>
-                <Col lg="4" className="mb-5">
+                <Col md="4" className="mb-5">
                     <Card className='bg-transparent text-light text-center' style={{ border: 'none' }}>
                         <FontAwesomeIcon icon={faMobileScreenButton} className='fa-5x icons-with-shadow' />
                         <CardBody>
@@ -36,7 +36,7 @@ const Contact = () => {
                         </CardBody>
                     </Card>
                 </Col>
-                <Col lg="4" className="mb-5">
+                <Col md="4" className="mb-5">
                     <Card className='bg-transparent text-light text-center' style={{ border: 'none' }}>
                         <FontAwesomeIcon icon={faCommentDots} className='fa-5x icons-with-shadow' />
                         <CardBody>
@@ -49,7 +49,7 @@ const Contact = () => {
                         </CardBody>
                     </Card>
                 </Col>
-                <Col lg="4" className="mb-5">
+                <Col md="4" className="mb-5">
                     <Card className='bg-transparent text-light text-center' style={{ border: 'none' }}>
                         <FontAwesomeIcon icon={faEnvelope} className='fa-5x icons-with-shadow' />
                         <CardBody>
