@@ -1,0 +1,18 @@
+.carousel {
+    max-width: 700px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item {
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item img {
+    max-height: 500px;
+    justify-content: center;
+    align-items: center;
+}

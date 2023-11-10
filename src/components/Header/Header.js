@@ -32,8 +32,8 @@ const Header = ({totalItems}) => {
               alt="logo"
               src={logo}
               style={{
-                height: 80,
-                width: 65
+                height: 50,
+                width: 40
               }}
             />
           </NavbarBrand>

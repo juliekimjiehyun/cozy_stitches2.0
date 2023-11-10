@@ -20,10 +20,10 @@ const HomePage = () => {
                     <h1 className='homeTitle'>Cozy Stitches</h1>
                     <ProductCarousel className='carousel'/>
                         <Row>
-                            <Col>
+                            <Col sm="6">
                                 <img src={flashSaleLogo} width='90%' className='my-5 logo' />
                             </Col>
-                            <Col>
+                            <Col sm="6">
                                 <img src={customOrderLogo} width='90%' className='my-5 logo' />
                             </Col>
                         </Row>

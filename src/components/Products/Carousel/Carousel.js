@@ -7,6 +7,7 @@ import {
     CarouselIndicators
 } from 'reactstrap';
 import commerce from '../../../lib/commerce';
+import './styles.css'
 
 
 const ProductCarousel = (args) => {
@@ -44,26 +45,25 @@ const ProductCarousel = (args) => {
     const slides = featuredProducts.map((product, index) => {
         return (
             <CarouselItem
+                className="carousel-item"
                 key={index}  
                 tag='div'
                 onExiting={() => setAnimating(true)}
                 onExited={() => setAnimating(false)}
             >
-                <img src={product.image.url} alt={product.name}/>
-                <CarouselCaption
-                captionText={product.name}
-                />
+                <img src={product.image.url} alt={product.name} className="position-absolute top-50 start-50 translate-middle"/>
             </CarouselItem>
         );
     });
 
       return (
         <Carousel
-      activeIndex={activeIndex}
-      next={next}
-      previous={previous}
-      {...args}
-    >
+        className="carousel"
+        activeIndex={activeIndex}
+        next={next}
+        previous={previous}
+        {...args}
+        >
       <CarouselIndicators
         items={featuredProducts}
         activeIndex={activeIndex}

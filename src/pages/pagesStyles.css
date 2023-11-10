@@ -1,22 +1,15 @@
-.homePage {
-    background-color: #c3e1ee;
+body {
+    background-color: #F490B9
 }
 
-.aboutPage {
-    background-color: #f2c42f;
-}
-
-.contactPage {
-    background-color: #e07978;
-}
-
-.productPage {
-    background-color: #da661b;
+.homeTitle {
+    font-size: 7rem;
 }
 
 h1 {
-    font-family: 'DynaPuff', sans-serif;
-    font-size: 7rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
     color: white;
     text-align: left;
     text-align: center;
@@ -27,4 +20,8 @@ h1 {
     1px -1px 0 black,
     -1px -1px 0 black,
     -5px 5px 0 black;
+ }
+
+ .contactCards {
+    padding: 100px 50px 150px 50px;
  }

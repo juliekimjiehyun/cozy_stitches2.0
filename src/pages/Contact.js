@@ -14,15 +14,16 @@ const Contact = () => {
 
 
     return (
-        <Container className="contactPage">
+        <div className="contactPage">
+        <Container>
             <Row>
                 <Col>
                     <h1>Contact</h1>
                 </Col>
             </Row>
-            <Row className='m-5'>
-                <Col>
-                    <Card className='bg-transparent text-light text-center p-3 m-5' style={{ border: 'none' }}>
+            <Row className='m-5 contactCards'>
+                <Col lg="4" className="mb-5">
+                    <Card className='bg-transparent text-light text-center' style={{ border: 'none' }}>
                         <FontAwesomeIcon icon={faMobileScreenButton} className='fa-5x icons-with-shadow' />
                         <CardBody>
                             <CardTitle>
@@ -35,8 +36,8 @@ const Contact = () => {
                         </CardBody>
                     </Card>
                 </Col>
-                <Col>
-                    <Card className='bg-transparent text-light text-center p-3 m-5' style={{ border: 'none' }}>
+                <Col lg="4" className="mb-5">
+                    <Card className='bg-transparent text-light text-center' style={{ border: 'none' }}>
                         <FontAwesomeIcon icon={faCommentDots} className='fa-5x icons-with-shadow' />
                         <CardBody>
                             <CardTitle>
@@ -48,8 +49,8 @@ const Contact = () => {
                         </CardBody>
                     </Card>
                 </Col>
-                <Col>
-                    <Card className='bg-transparent text-light text-center p-3 m-5' style={{ border: 'none' }}>
+                <Col lg="4" className="mb-5">
+                    <Card className='bg-transparent text-light text-center' style={{ border: 'none' }}>
                         <FontAwesomeIcon icon={faEnvelope} className='fa-5x icons-with-shadow' />
                         <CardBody>
                             <CardTitle>
@@ -65,6 +66,7 @@ const Contact = () => {
             </Row>
 
         </Container>
+        </div>
     );
 };
 
