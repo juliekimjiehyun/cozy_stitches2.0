@@ -1,0 +1,30 @@
+.productCard {
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.modalImage img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.modalImage, .modalPrice, .modalButtons, .modalBody, .modalTitle {
+    justify-content: center;
+    text-align: center;
+    background-color: pink;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.cartButton {
+    border: white;
+    background-color: hotpink;
+    margin-top: 0.5em;
+}

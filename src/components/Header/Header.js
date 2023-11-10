@@ -12,13 +12,10 @@ import {
   } from 'reactstrap';
   import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
   import { faBagShopping } from '@fortawesome/free-solid-svg-icons';
-import {useLocation} from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import './styles.css';
 
 const Header = ({totalItems}) => {
-  
-    const location = useLocation();
 
     const [isOpen, setIsOpen] = useState(false);
       
@@ -32,8 +29,7 @@ const Header = ({totalItems}) => {
               alt="logo"
               src={logo}
               style={{
-                height: 50,
-                width: 40
+                height: 50
               }}
             />
           </NavbarBrand>
@@ -53,14 +49,12 @@ const Header = ({totalItems}) => {
                 <NavLink href="/contact">Contact</NavLink>
               </NavItem>
             </Nav>
-{location.pathname === '/' && (
-
-              <Button>
-              <FontAwesomeIcon icon={faBagShopping}/>
-                <Badge href={"/cart"}>
+              <Button className="cart-btn">
+              <FontAwesomeIcon icon={faBagShopping} />
+                <Badge color="warning" pill href={"/cart"}>
                  {totalItems}
                 </Badge>
-              </Button>)}
+              </Button>
           </Collapse>
         </Navbar>
       </div>

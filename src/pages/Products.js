@@ -8,10 +8,10 @@ const Products = ({products, onAddToCart}) => {
         <div className="productPage">
             <Container>
                 <h1>Amigurumi</h1>
-                <Row className="ms-auto">{
+                <Row className="mb-5">{
                     products.map(product => {
                         return (
-                            <Col md='5' lg='3' xl='2'>
+                            <Col sm="6" md="4">
                                 <Product 
                                 key={product.id}
                                 product={product}
