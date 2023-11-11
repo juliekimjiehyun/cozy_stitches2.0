@@ -47,7 +47,7 @@ const About = () => {
                 <a href="https://pinterest.com">
                   <PinterestIcon fontSize="large"/>
                 </a>
-                <a href="https://twitter.com">
+                <a href="https://x.com">
                   <TwitterIcon fontSize="large"/>
                 </a>
               </div>

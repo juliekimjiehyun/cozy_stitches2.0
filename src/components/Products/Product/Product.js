@@ -58,7 +58,7 @@ const Product = ({product, onAddToCart, args}) => {
             {product.price.formatted_with_symbol}
         </ModalFooter>
         <ModalFooter className="modalButtons">
-          <Button color="warning" onClick={toggle}>
+          <Button color="warning" onClick={() => onAddToCart(product.id, 1)}>
             Add to Cart
           </Button>{' '}
           <Button color="secondary" onClick={toggle}>

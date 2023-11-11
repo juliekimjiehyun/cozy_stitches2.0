@@ -7,11 +7,11 @@ import {
     CardTitle, 
     CardSubtitle,
 } from 'reactstrap';
-
+import './styles.css'
 
 const CartItem = ({item, onUpdateCartQty, onRemoveFromCart}) => {
   return (
-    <Card >
+    <Card className="cartCard">
         <img
             alt={item.name}
             src={item.image.url}
@@ -24,10 +24,10 @@ const CartItem = ({item, onUpdateCartQty, onRemoveFromCart}) => {
                 <CardSubtitle>
                     {item.line_total.formatted_with_symbol}
                 </CardSubtitle>
-                <Button onClick={() => onUpdateCartQty(item.id, item.quantity - 1)}>-</Button>
-                <CardText>{item.quantity}</CardText>
-                <Button onClick={() => onUpdateCartQty(item.id, item.quantity + 1)}>+</Button>
-                <Button onClick={() => onRemoveFromCart(item.id)}>Remove</Button>
+                <Button className="cartItemButton m-3" onClick={() => onUpdateCartQty(item.id, item.quantity - 1)}>-</Button>
+                {item.quantity}
+                <Button className="cartItemButton m-3" onClick={() => onUpdateCartQty(item.id, item.quantity + 1)}>+</Button>
+                <Button className="cartItemButton m-2" onClick={() => onRemoveFromCart(item.id)}>Remove</Button>
             </div>
         </CardBody>
     </Card>

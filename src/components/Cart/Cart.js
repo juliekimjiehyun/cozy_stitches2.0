@@ -18,7 +18,7 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
           <Container>
               <Row className="cartItems">
                 {cart.line_items.map((lineItem) => (
-                  <Col key={lineItem.id} sm="6" md="4">
+                  <Col md="6" lg="4" xl="3" className="m-2"  key={lineItem.id}>
                     <CartItem item={lineItem} onUpdateCartQty={handleUpdateCartQty} onRemoveFromCart={handleRemoveFromCart}/>
                   </Col>
                 ))}
@@ -27,13 +27,13 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
               
         </div>
         <div>
-            <p>
+            <h4>
                 Subtotal: {cart.subtotal.formatted_with_symbol}
-            </p>
-            <Button onClick={handleEmptyCart}>
+            </h4>
+            <Button className="checkoutButtons" onClick={handleEmptyCart}>
                 Empty Cart
             </Button>
-            <Button>
+            <Button className="checkoutButtons">
                 Checkout
             </Button>
         </div>

@@ -41,7 +41,7 @@ const Footer = () => {
                                 <a href="https://pinterest.com">PINTEREST</a>
                             </li>
                             <li>
-                                <a href="https://twitter.com">TWITTER</a>
+                                <a href="https://x.com">TWITTER</a>
                             </li>
                         </ul>
                         

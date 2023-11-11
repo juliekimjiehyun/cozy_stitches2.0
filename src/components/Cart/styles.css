@@ -1,3 +1,22 @@
 .cartItems {
     margin-bottom: 20px;
+    justify-content: center;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h4 {
+    color: white;
+    background-color: pink;
+    padding: 2%;
+}
+
+.checkoutButtons {
+    justify-content: center;
+    text-align: center;
+    background-color: hotpink;
+    border: none;
+    margin: 2% 2% 2% 0;
 }

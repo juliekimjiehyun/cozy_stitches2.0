@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import ProductCarousel from '../components/Products/Carousel/Carousel';
 import customOrderLogo from '../assets/customOrderLogo.png';
 import flashSaleLogo from '../assets/flashSaleLogo.png';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import {Link} from 'react-router-dom';
 import './pagesStyles.css';
 
 const HomePage = () => {
@@ -21,10 +21,14 @@ const HomePage = () => {
                     <ProductCarousel className='carousel'/>
                         <Row>
                             <Col sm="6">
-                                <img src={flashSaleLogo} width='90%' className='my-5 logo' />
+                                <Link to="/products">
+                                    <img src={flashSaleLogo} width='90%' className='my-5 logo' />
+                                </Link>
                             </Col>
                             <Col sm="6">
-                                <img src={customOrderLogo} width='90%' className='my-5 logo' />
+                                <Link to="/contact">
+                                    <img src={customOrderLogo} width='90%' className='my-5 logo' />
+                                </Link>
                             </Col>
                         </Row>
                     </Container>

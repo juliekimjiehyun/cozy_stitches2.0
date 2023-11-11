@@ -1,0 +1,16 @@
+.cartCard {
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.cartItemButton {
+        border: white;
+        background-color: hotpink;
+        margin-top: 0.5em;
+}
