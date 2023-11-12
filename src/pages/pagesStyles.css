@@ -1,9 +1,4 @@
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
- }
- 
+
 body {
     background-color: #F490B9
 }
@@ -32,39 +27,21 @@ h1 {
     padding: 100px 50px 150px 50px;
  }
 
- .welcomeSection {
-    position: relative;
- }
-
  .welcomeText {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 1.3em;
+    margin: 5rem 0 10rem 0;
  }
-
-.contactSection {
-    margin: 0;
-    padding: 0;
-}
 
  .contactText {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 1.3em;
-    padding: 40px;
+    margin: 10rem 0;
+    padding: 5rem 0;
     border: 5px solid hotpink;
     background-color: rgba(255, 105, 180, 0.5);
-    width: 100%;
  }
 
  h3 {
@@ -76,4 +53,10 @@ h1 {
 
  .socialIcons {
     color: white;
+ }
+
+ .testingBackground {
+   background-image: url('../assets/flowerBackground.png');
+   background-size: cover;
+   background-position: center;
  }

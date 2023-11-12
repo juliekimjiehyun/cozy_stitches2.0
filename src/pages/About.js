@@ -1,6 +1,6 @@
 import React from 'react'
 import flowerBackground from '../assets/flowerBackground.png';
-import rainbowBackground from '../assets/rainbowBackground.png';
+import yarnCat from '../assets/yarnCat.png';
 import './pagesStyles.css';
 
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -9,10 +9,14 @@ import PinterestIcon from '@mui/icons-material/Pinterest';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
 const About = () => {
+  const wallpaper = {
+    backgroundImage: {flowerBackground},
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+  };
+
   return (
-    <div>
-        <div className="welcomeSection">
-            <img src={flowerBackground} alt="Flower background" width="100%"/>
+    <div className="testingBackground" style={wallpaper}>
               <div className="welcomeText">
                 <h1 className="mb-4">Welcome!</h1>
                 <p>At Cozy Stitches, our journey began with a love 
@@ -22,10 +26,8 @@ const About = () => {
                   into a heartfelt mission to craft unique, lovable 
                   dolls that capture the essence of childhood wonder 
                   and nostalgia.</p>
+                  <img src={yarnCat} alt="cat with yarn" height="200" className="mt-5"/>
                 </div>
-        </div>
-         <div className="contactSection">
-            <img src={rainbowBackground} alt="Rainbow background" width="100%"/>
             <div className="contactText">
               <h3 className="mb-4">Get in Touch</h3>
               <p>Have a question or a special request? We'd love to 
@@ -51,7 +53,6 @@ const About = () => {
                   <TwitterIcon fontSize="large"/>
                 </a>
               </div>
-            </div>
           <div/>
         </div>
     </div>
