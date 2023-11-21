@@ -3,7 +3,6 @@ import {
     Carousel,
     CarouselItem,
     CarouselControl,
-    CarouselCaption,
     CarouselIndicators
 } from 'reactstrap';
 import commerce from '../../../lib/commerce';
@@ -41,7 +40,7 @@ const ProductCarousel = (args) => {
         fetchProducts();
     }, []);
     
-    
+ 
     const slides = featuredProducts.map((product, index) => {
         return (
             <CarouselItem
